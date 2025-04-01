@@ -4,12 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TextRPG
+namespace TextRPG.Scenes
 {
     public class ShopScene : Scene
     {
         public override void Render()
         {
+            Game.PrintInfo();
             Console.WriteLine("\"어서오세요\"");
             Console.WriteLine("\"전부 좋은 물건입니다~\"");
             Console.WriteLine("상점에는 다양한 물건들이 놓여져 있다");

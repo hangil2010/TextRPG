@@ -9,10 +9,7 @@ namespace TextRPG
     public class TitleScene : Scene
     {
 
-        public override void Next()
-        {
-            // TODO : 다음 신-으로 전환 구현 필요
-        }
+        
 
         public override void Render()
         {
@@ -32,5 +29,10 @@ namespace TextRPG
         }
 
         public override void Wait() { }
+
+        public override void Next()
+        {
+            // TODO : 다음 신-으로 전환 구현 필요
+        }
     }
 }

@@ -32,7 +32,9 @@ namespace TextRPG
                 curScene.Render();
                 curScene.Choice();
                 curScene.Input();
+                Console.WriteLine();
                 curScene.Result();
+                Console.WriteLine();
                 curScene.Wait();
                 curScene.Next();
             }
@@ -46,6 +48,16 @@ namespace TextRPG
         public static void ChangeScene(string sceneName)
         {
             curScene = sceneDic[sceneName];
+        }
+
+        public static void GameOver(string reason)
+        {
+            Console.Clear();
+            Console.WriteLine("**************************************");
+            Console.WriteLine("**            게임 오버..           **");
+            Console.WriteLine("**************************************");
+            Console.WriteLine(reason);
+            gameOver = true;
         }
     }
 }

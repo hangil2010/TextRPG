@@ -26,6 +26,11 @@ namespace TextRPG
         {
             switch (input)
             {
+                case ConsoleKey.D3:
+                    Console.WriteLine("당신은 상인을 위협할려고 시도하였습니다");
+                    Console.WriteLine("하지만 상인은 과거 용병단의 수장이였습니다");
+                    Console.WriteLine("눈 깜짝할 새 기절하였고, 사망하였습니다.");
+                    break;
                 case ConsoleKey.D4:
                     Console.WriteLine("마을로 돌아갑니다");
                     break;
@@ -41,6 +46,9 @@ namespace TextRPG
             {
                 case ConsoleKey.D4:
                     Game.ChangeScene("Town");
+                    break;
+                case ConsoleKey.D3:
+                    Game.GameOver("이 바닥에서 오래 살았다는 건 강하다는 것");
                     break;
             }
         }

@@ -68,14 +68,6 @@ namespace TextRPG.Scenes
                     Game.ChangeScene("Shop");
                     break;
                 case ConsoleKey.D2:
-                    //if(Game.Player.Speed >= 10)
-                    //{
-                    //    // TODO : 추격 씬 전환
-                    //}
-                    //else
-                    //{
-                    //    Game.GameOver("수상한 사람은 함부로 쫓아가지 마세요");
-                    //}
                     break;
             }
         }

@@ -8,13 +8,10 @@ namespace TextRPG.Scenes
 {
     public class TitleScene : Scene
     {
-
-        
-
         public override void Render()
         {
             Console.WriteLine("**************************************");
-            Console.WriteLine("**            레전드 RPG            **");
+            Console.WriteLine("**         Fallout Classic          **");
             Console.WriteLine("**************************************");
             Console.WriteLine();
         }
@@ -23,7 +20,7 @@ namespace TextRPG.Scenes
 
         public override void Choice()
         {
-            Console.WriteLine("1. 게임 시작");
+            Console.WriteLine("1. 새 게임 시작");
             Console.WriteLine("2. 불러오기(미구현)");
             Console.WriteLine("3. 게임 종료");
         }
@@ -35,7 +32,7 @@ namespace TextRPG.Scenes
             switch (input)
             {
                 case ConsoleKey.D1:
-                    Game.ChangeScene("Town");
+                    Game.ChangeScene("Create");
                     break;
             }
         }

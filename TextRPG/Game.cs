@@ -19,6 +19,7 @@ namespace TextRPG
             sceneDic = new Dictionary<string, Scene>();
             sceneDic.Add("Title", new TitleScene());
             sceneDic.Add("Town", new TownScene());
+            sceneDic.Add("Shop", new ShopScene());
 
             curScene = sceneDic["Title"];
         }
@@ -44,7 +45,7 @@ namespace TextRPG
 
         public static void ChangeScene(string sceneName)
         {
-
+            curScene = sceneDic[sceneName];
         }
     }
 }

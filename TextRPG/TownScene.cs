@@ -51,7 +51,12 @@ namespace TextRPG
 
         public override void Next()
         {
-            throw new NotImplementedException();
+            switch (input)
+            {
+                case ConsoleKey.D1:
+                    Game.ChangeScene("Shop");
+                    break;
+            }
         }
     }
 }

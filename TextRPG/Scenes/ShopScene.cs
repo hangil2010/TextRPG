@@ -27,6 +27,10 @@ namespace TextRPG.Scenes
         {
             switch (input)
             {
+                case ConsoleKey.D1:
+                    Console.WriteLine("구슬에는 몸을 가볍게 하는 주문이 있었습니다");
+                    //Game.Player.Speed += 5;
+                    break;
                 case ConsoleKey.D3:
                     Console.WriteLine("당신은 상인을 위협할려고 시도하였습니다");
                     Console.WriteLine("하지만 상인은 과거 용병단의 수장이였습니다");

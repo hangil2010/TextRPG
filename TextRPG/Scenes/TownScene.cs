@@ -34,16 +34,16 @@ namespace TextRPG.Scenes
                 case ConsoleKey.D2:
                     Console.WriteLine("수상한 남성을 주시하고 있었습니다.");
                     Console.WriteLine("수상한 남성의 부하가 뒤에서 나타나 기습하였습니다.");
-                    if(Game.Player.Speed >= 10)
-                    {
-                        Console.WriteLine("당신은 단검을 유연하게 피했습니다!");
-                        Console.WriteLine("수상한 남자와 부하는 당황하며 도망가기 시작합니다");
-                        Console.WriteLine("당신은 수상한 남자를 뒤쫓아갑니다");
-                    }
-                    else
-                    {
-                        Console.WriteLine("당신은 단검이 날아오는것을 보았으나 피하지 못했습니다.");
-                    }
+                    //if(Game.Player.Speed >= 10)
+                    //{
+                    //    Console.WriteLine("당신은 단검을 유연하게 피했습니다!");
+                    //    Console.WriteLine("수상한 남자와 부하는 당황하며 도망가기 시작합니다");
+                    //    Console.WriteLine("당신은 수상한 남자를 뒤쫓아갑니다");
+                    //}
+                    //else
+                    //{
+                    //    Console.WriteLine("당신은 단검이 날아오는것을 보았으나 피하지 못했습니다.");
+                    //}
                         break;
                 case ConsoleKey.D3:
                     Console.WriteLine("필드로 나갑니다");
@@ -68,14 +68,14 @@ namespace TextRPG.Scenes
                     Game.ChangeScene("Shop");
                     break;
                 case ConsoleKey.D2:
-                    if(Game.Player.Speed >= 10)
-                    {
-                        // TODO : 추격 씬 전환
-                    }
-                    else
-                    {
-                        Game.GameOver("수상한 사람은 함부로 쫓아가지 마세요");
-                    }
+                    //if(Game.Player.Speed >= 10)
+                    //{
+                    //    // TODO : 추격 씬 전환
+                    //}
+                    //else
+                    //{
+                    //    Game.GameOver("수상한 사람은 함부로 쫓아가지 마세요");
+                    //}
                     break;
             }
         }

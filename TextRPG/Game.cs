@@ -28,8 +28,7 @@ namespace TextRPG
             curScene = sceneDic["Title"];
 
             player = new Player();
-            player.Power = 10;
-            player.Speed = 5;
+            Console.ReadKey();
         }
         public static void Run()
         {
@@ -72,7 +71,7 @@ namespace TextRPG
         public static void PrintInfo()
         {
             Console.WriteLine("**************************************");
-            Console.WriteLine($"**    힘 : {player.Power}\t 속도 : {player.Speed}     **");
+            //Console.WriteLine($"**    힘 : {player.Power}\t속도 : {player.Speed}");
             Console.WriteLine("**************************************");
             Console.WriteLine();
         }

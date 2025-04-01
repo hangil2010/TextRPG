@@ -1,19 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace TextRPG
+﻿namespace TextRPG
 {
     public class Player
     {
-        private int power;
+        private SPECIAL special = new SPECIAL();
+        private Skills skills = new Skills();
 
-        public int Power { get; set; }
-
-        private int speed;
-
-        public int Speed { get; set; }
+        public Player()
+        {
+            special.SetSpecial();
+            skills.SetSkills(special);
+            PrintStats();
+        }
+        
+        private void PrintStats()
+        {
+            special.PrintSpecial();
+            skills.PrintSkills();
+        }
     }
 }
